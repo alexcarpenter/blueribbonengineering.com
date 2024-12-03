@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { SITE_DESCRIPTION, SITE_TITLE } from "./constants";
 
 const mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -9,8 +8,8 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: SITE_TITLE,
-  description: SITE_DESCRIPTION,
+  title: "Blue Ribbon Engineering",
+  description: "by Alex Carpenter",
 };
 
 export default function RootLayout({
