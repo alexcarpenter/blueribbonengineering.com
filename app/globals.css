@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* @theme {} */
 
 body {
   @apply bg-neutral-950 text-neutral-50 p-8;
