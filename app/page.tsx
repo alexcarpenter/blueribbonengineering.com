@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <h1 className="uppercase text-avocado-600">
+    <h1 className="uppercase">
       Blue Ribbon
       <br />
-      Engineering
+      Engineering_
     </h1>
   );
 }
