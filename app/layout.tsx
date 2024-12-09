@@ -9,7 +9,6 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Blue Ribbon Engineering",
-  description: "by Alex Carpenter",
 };
 
 export default function RootLayout({
