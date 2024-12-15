@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
-/* @theme {} */
+@theme {
+  --font-family-sans: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --font-family-serif: TimesNewRoman, Times New Roman, Times, Baskerville,
+    Georgia, serif;
+}
 
 body {
   @apply bg-neutral-950 text-neutral-50 p-8 text-sm;

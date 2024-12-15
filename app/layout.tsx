@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/header";
+// import { Navigation } from "@/components/navigation";
 
 const mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -8,7 +10,10 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Blue Ribbon Engineering",
+  title: {
+    template: "%s | Blue Ribbon Engineering",
+    default: "Blue Ribbon Engineering",
+  },
 };
 
 export default function RootLayout({
@@ -18,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${mono.className} antialiased`}>{children}</body>
+      <body className={`${mono.className} antialiased`}>
+        <Header />
+        {/* <Navigation /> */}
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
