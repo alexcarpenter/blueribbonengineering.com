@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
-// import { Navigation } from "@/components/navigation";
 
 const mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -25,7 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${mono.className} antialiased`}>
         <Header />
-        {/* <Navigation /> */}
         <main>{children}</main>
       </body>
     </html>
