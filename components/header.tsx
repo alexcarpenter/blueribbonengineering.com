@@ -9,7 +9,7 @@ export async function Header() {
         <br />
         Engineering
       </h1>
-      <p>v{version}</p>
+      <p className="italic">v{version}</p>
     </header>
   );
 }
