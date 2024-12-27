@@ -3,5 +3,5 @@
 /* @theme {} */
 
 body {
-  @apply bg-neutral-300 p-8 text-sm max-w-3xl text-[#0000EE] selection:bg-yellow-950;
+  @apply bg-neutral-950 p-8 text-sm max-w-3xl text-yellow-500 selection:bg-yellow-950;
 }

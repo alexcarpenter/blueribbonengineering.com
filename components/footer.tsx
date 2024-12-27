@@ -31,7 +31,7 @@ export function Footer() {
               <dt
                 className={cx(
                   "flex items-center gap-x-2",
-                  "after:h-px after:min-w-8 after:border-t after:border-dotted after:flex-1"
+                  "after:h-px after:min-w-8 after:border-t after:flex-1"
                 )}
               >
                 {title}
