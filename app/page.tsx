@@ -5,7 +5,7 @@ export default async function Home() {
     <>
       <header>
         <h2 className="uppercase italic">
-          // Exploring engineering excellence
+          {"//"} Exploring engineering excellence
         </h2>
       </header>
 
