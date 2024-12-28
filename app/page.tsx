@@ -1,10 +1,9 @@
-import { Heading } from "@/components/heading";
-
-import { getEntries } from "@/utils/mdx";
-import Link from "next/link";
+// import { Heading } from "@/components/heading";
+// import { getEntries } from "@/utils/mdx";
+// import Link from "next/link";
 
 export default async function Home() {
-  const entries = await getEntries();
+  // const entries = await getEntries();
   return (
     <>
       <header>
