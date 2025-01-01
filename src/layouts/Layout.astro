@@ -1,17 +1,29 @@
 ---
 import "../styles/global.css";
+import Header from "@/components/header.astro";
+import Footer from "@/components/footer.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
+    <link
+      rel="preload"
+      href="/fonts/JetBrainsMono-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Blue Ribbon Engineering</title>
   </head>
-  <body>
-    <slot />
+  <body class="antialiased flex flex-col h-full">
+    <Header />
+    <main class="flex-1"><slot /></main>
+    <Footer />
   </body>
 </html>

@@ -1,0 +1,47 @@
+---
+const items: {
+  title: string;
+  description: string;
+}[] = [
+  {
+    title: "Framework",
+    description: "Astro",
+  },
+  {
+    title: "Font",
+    description: "Jetbrains Mono",
+  },
+  {
+    title: "Styling",
+    description: "Tailwind CSS",
+  },
+  {
+    title: "Proprietor",
+    description: "Alex Carpenter",
+  },
+];
+---
+
+<footer>
+  <dl
+    class="grid grid-cols-1 sm:grid-cols-[50%_1fr] gap-x-[1ch] gap-y-2 uppercase"
+  >
+    {
+      items.map(({ title, description }) => {
+        return (
+          <>
+            <dt
+              class:list={[
+                "flex items-center gap-x-[1ch]",
+                "after:h-px after:min-w-8 after:border-t after:flex-1",
+              ]}
+            >
+              {title}
+            </dt>
+            <dd>{description}</dd>
+          </>
+        );
+      })
+    }
+  </dl>
+</footer>
