@@ -6,3 +6,15 @@ export const metadata = {
 # {metadata.title}
 
 Hello world
+
+```tsx
+export async function Code(props: Props) {
+  const lang = getLang(props.className);
+  const output = await codeToHtml(props.children, {
+    lang,
+    theme: 'css-variables'
+  });
+
+  return <div dangerouslySetInnerHTML={{ __html: output }} />;
+}
+```

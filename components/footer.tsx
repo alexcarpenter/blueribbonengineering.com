@@ -1,11 +1,13 @@
 import * as React from "react";
 import { cx } from "@/utils/className";
-import { Datetime } from "./datetime";
 
-const items = [
+const items: {
+  title: string;
+  description: React.ReactNode;
+}[] = [
   {
-    title: "Datetime",
-    description: <Datetime />,
+    title: "Framework",
+    description: "Next.js",
   },
   {
     title: "Font",

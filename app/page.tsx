@@ -1,9 +1,9 @@
-// import { Heading } from "@/components/heading";
-// import { getEntries } from "@/utils/mdx";
-// import Link from "next/link";
+import { Heading } from "@/components/heading";
+import { getEntries } from "@/utils/mdx";
+import Link from "next/link";
 
 export default async function Home() {
-  // const entries = await getEntries();
+  const entries = await getEntries();
   return (
     <>
       <header>
@@ -22,7 +22,7 @@ export default async function Home() {
         <Heading>Prototypes</Heading>
       </section> */}
 
-      {/* <section className="mt-8">
+      <section className="mt-8">
         <Heading>Interviews</Heading>
         <ul className="mt-4 space-y-2 list-['_*_'] list-inside">
           {entries.map((entry) => {
@@ -35,7 +35,7 @@ export default async function Home() {
             );
           })}
         </ul>
-      </section> */}
+      </section>
     </>
   );
 }
