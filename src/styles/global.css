@@ -15,5 +15,5 @@
 }
 
 body {
-  @apply bg-neutral-950 p-8 text-sm max-w-3xl text-yellow-500 font-mono;
+  @apply max-w-3xl bg-neutral-950 p-8 font-mono text-sm text-yellow-500;
 }
